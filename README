@@ -1,0 +1,9 @@
+emptydir is a small utility that opens directories, tries to find
+directory entries in them, and prints to standard output whether they
+are empty or not. emptydir thinks a directory is empty if it has no
+directory entries, or if the only directory entries in the directory
+are '.', '..' or both.
+
+emptydir is free software under the terms of the GPL (see COPYING).
+
+Victor Zamanian (C) 2010

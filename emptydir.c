@@ -39,7 +39,7 @@ int error(const char* format, ...);
 /*
  * Prints usage information.
  */
-void usage();
+void usage(const char* prog_name);
 
 int main(int argc, char** argv)
 {
@@ -50,7 +50,7 @@ int main(int argc, char** argv)
 	prog_name = argv[0];
 
 	if (argc < 2) {
-		usage();
+		usage(prog_name);
 		return 1;
 	}
 
@@ -120,5 +120,5 @@ int error(const char* format, ...)
 
 void usage(const char* prog_name)
 {
-	fprintf(stderr, "%s DIRECTORY...", prog_name);
+	fprintf(stderr, "Usage: %s DIRECTORY...\n", prog_name);
 }
